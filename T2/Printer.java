@@ -22,7 +22,7 @@ class Answer {
       }
       catch (ArrayIndexOutOfBoundsException e)
       {
-            System.out.println("АТАТАТА");
+            System.out.println("Размеры массивов не совпадают");
       }
     }
 }
