@@ -12,8 +12,9 @@ import java.util.Arrays;
 class Answer {
     public int[] subArrays(int[] a, int[] b){
       // Введите свое решение ниже
-      int [] c = new int[a.length];
+      int [] c;
       try{
+            c = new int[a.length];
             for (int i = 0; i < c.length; i++ )
             {
                 c[i] = a[i] - b[i];
@@ -23,6 +24,8 @@ class Answer {
       catch (ArrayIndexOutOfBoundsException e)
       {
             System.out.println("Размеры массивов не совпадают");
+            c = new int[1];
+            return c;
       }
     }
 }
